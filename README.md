@@ -44,6 +44,10 @@ python3 app.py
 ```bash
 docker run -td -p 5000:5000 --name book-recommendation-app  raanjeetsgolu/book-recommendation-app:3.0-1
 ```
+Access the application: Open your browser and navigate to http://127.0.0.1:5000.
+
+This will start the application inside a Docker container and make it accessible on your local machine at port 5000.
+
 ***By creating a Docker image locally***
 
 1.**Build the Docker image**:
