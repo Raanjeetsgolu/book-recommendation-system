@@ -2,15 +2,14 @@
 
 ## Overview
 
-The **Book Recommendation System** is an AI-driven project designed to provide personalized book suggestions to users based on other user's  ratings. This system utilizes collaborative filtering techniques to analyze user behavior and recommend relevant books, helping users discover new titles that match their interests.
+The **Book Recommendation System** is an AI-driven application that offers personalized book suggestions by analyzing user ratings through collaborative filtering. It helps users discover new titles based on their interests and popular trends in the community.
 
 ## Features
 
 - **Personalized Recommendations**: Users receive tailored book suggestions based on their ratings and the preferences of similar users.
 - **Popular Books List**: The system can display a list of the top 50 popular books, allowing users to explore trending titles.
-- **User Queries**: Users can query any book, and the system will respond with relevant recommendations.
 
-## Installation and Usage Instructions
+## Installation and Usage 
 
 To set up the Book Recommendation System locally, follow these steps:
 
@@ -31,37 +30,32 @@ pip install -r requirements.txt
 python3 app.py
 ```
 
-4. Access the application in your browser at `http://127.0.0.1:5000`.
+4. Access the App: Open your browser and navigate to `http://127.0.0.1:5000`.
 
-## Usage
+## 🐳 Docker setup
 
-- **Input**: Enter the name of a book you like.
-- **Output**: The system returns a list of similar book recommendations based on collaborative filtering.
 
-## 🐳 Run with Docker
+**Option 1: Pull from Docker Hub**
 
-***By pulling the Docker image of this app from Docker Hub.***
 ```bash
 docker run -td -p 5000:5000 --name book-recommendation-app  raanjeetsgolu/book-recommendation-app:3.0-1
 ```
 Access the application: Open your browser and navigate to http://127.0.0.1:5000.
 
-This will start the application inside a Docker container and make it accessible on your local machine at port 5000.
+**Option 2: Build Locally**
 
-***By creating a Docker image locally***
 
-1.**Build the Docker image**:
+1.***Build the Docker image***:
+
 ```bash
 docker build -t book-recommendation-system .
   ```
-2.**Run the Docker container**:
+2.***Run the Docker container***:
    ```bash
-   docker run -p 5000:5000 book-recommendation-system
+docker run -p 5000:5000 book-recommendation-system
    ```
-3.**Access the application**:
+3.***Access the application***:
  Open your browser and navigate to http://127.0.0.1:5000.
-
-This will start the application inside a Docker container and make it accessible on your local machine at port 5000.
 
 ## 🛠 Technologies
 
