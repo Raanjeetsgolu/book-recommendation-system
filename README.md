@@ -40,7 +40,7 @@ python3 app.py
 ```bash
 docker run -td -p 5000:5000 --name book-recommendation-app  raanjeetsgolu/book-recommendation-app:3.0-1
 ```
-Access the application: Open your browser and navigate to http://127.0.0.1:5000.
+Access the application: Open your browser and navigate to `http://127.0.0.1:5000`.
 
 **Option 2: Build Locally**
 
@@ -48,14 +48,14 @@ Access the application: Open your browser and navigate to http://127.0.0.1:5000.
 1.***Build the Docker image***:
 
 ```bash
-docker build -t book-recommendation-system .
+docker build -t book-recommendation-app .
   ```
 2.***Run the Docker container***:
    ```bash
-docker run -p 5000:5000 book-recommendation-system
+docker run -td -p 5000:5000 --name book-recommendation-app  book-recommendation-app
    ```
 3.***Access the application***:
- Open your browser and navigate to http://127.0.0.1:5000.
+ Open your browser and navigate to http://127.0.0.1:5000
 
 ## 🛠 Technologies
 
