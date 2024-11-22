@@ -64,3 +64,4 @@ docker run -td -p 5000:5000 --name book-recommendation-app  book-recommendation-
 + Pandas, Numpy (for data processing)
 + Scikit-Learn (for similarity computation)
 + Docker (for containerization)
++ pickle (for dumping and loading the model)
